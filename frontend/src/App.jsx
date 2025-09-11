@@ -13,12 +13,24 @@ function App() {
           <div className="font-sans text-4xl text-center md:px-16">Waveform Heart Intelligence Signal Processing & Early Recognition</div>
         </div>
         <div className="model-viewer-container w-full md:w-[42%]">
+          <div className="absolute top-0 left-0 z-[1] ">dsd</div>
           <ModelViewer
             url="https://raw.githubusercontent.com/Hamzaali146/Heart_3D_model/main/source/realistic_human_heart.glb"
             width={"100%"}
             height={"100vh"}
             defaultZoom={1.5}
-            showScreenshotButton={false}
+            showScreenshotButton={true}
+            // maxZoomDistance={3}
+            enableManualZoom={false}
+            fillLightIntensity={1}
+            autoRotateSpeed={0.2}
+            // ambientIntensity={1}
+            rimLightIntensity={2}
+            // environmentPreset={"Park"}
+            fadeIn={true}
+            autoRotate={true}
+            modelXOffset={-0.1}
+            modelYOffset={-0.01}
           />
 
         </div>
