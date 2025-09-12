@@ -1,6 +1,6 @@
 # W.H.I.S.P.E.R: Waveform Heart Intelligence Signal Processing & Early Recognition
 
-![W.H.I.S.P.E.R](product images/whisper.png)  
+![W.H.I.S.P.E.R ](product images/whisper.png)  
 *Revolutionizing cardiac health monitoring through AI-powered voice biomarkers and wearable sensors.*
 
 ---
