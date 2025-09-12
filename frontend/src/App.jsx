@@ -8,12 +8,12 @@ function App() {
   return (
     <>
       <div className="flex flex-col md:flex-row justify-center items-center min-h-screen bg-[#B01E28] text-white">
-        <div className="md:w-[58%] mt-10">
+        <div className="md:w-[58%] mt-10 md:mt-0">
           <div className="font-boldonse text-5xl md:text-8xl text-center mb-3">W.H.I.S.P.E.R</div>
           <div className="font-sans text-4xl text-center md:px-16">Waveform Heart Intelligence Signal Processing & Early Recognition</div>
         </div>
         <div className="model-viewer-container w-full md:w-[42%]">
-          <div className="absolute top-0 left-0 z-[1] ">dsd</div>
+          {/* <div className="absolute top-0 left-0 z-[1] ">dsd</div> */}
           <ModelViewer
             url="https://raw.githubusercontent.com/Hamzaali146/Heart_3D_model/main/source/realistic_human_heart.glb"
             width={"100%"}
