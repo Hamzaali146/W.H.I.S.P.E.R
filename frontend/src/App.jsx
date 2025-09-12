@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./App.css";
 import Beams from "./bg/Beams";
-import ProfileCard from "./components/ProfileCard";
 import ModelViewer from "./components/ModelViewer";
 
 function App() {
@@ -30,7 +29,7 @@ function App() {
             fadeIn={true}
             autoRotate={true}
             modelXOffset={-0.1}
-            modelYOffset={-0.01}
+            modelYOffset={-0.07}
           />
 
         </div>
