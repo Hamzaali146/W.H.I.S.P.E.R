@@ -1,9 +1,26 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import Beams from "./bg/Beams";
 import ModelViewer from "./components/ModelViewer";
 
 function App() {
+  const [modelYOffset, setModelYOffset] = useState(-0.07);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setModelYOffset(0);
+      } else {
+        setModelYOffset(-0.07);
+      }
+    };
+
+    handleResize(); 
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []); 
+
   return (
     <>
       <div className="flex flex-col md:flex-row justify-center items-center min-h-screen bg-[#B01E28] text-white">
@@ -12,26 +29,21 @@ function App() {
           <div className="font-sans text-4xl text-center md:px-16">Waveform Heart Intelligence Signal Processing & Early Recognition</div>
         </div>
         <div className="model-viewer-container w-full md:w-[42%]">
-          {/* <div className="absolute top-0 left-0 z-[1] ">dsd</div> */}
           <ModelViewer
             url="https://raw.githubusercontent.com/Hamzaali146/Heart_3D_model/main/source/realistic_human_heart.glb"
             width={"100%"}
             height={"100vh"}
             defaultZoom={1.5}
             showScreenshotButton={true}
-            // maxZoomDistance={3}
             enableManualZoom={false}
             fillLightIntensity={1}
             autoRotateSpeed={0.2}
-            // ambientIntensity={1}
             rimLightIntensity={2}
-            // environmentPreset={"Park"}
             fadeIn={true}
             autoRotate={true}
             modelXOffset={-0.1}
-            modelYOffset={-0.07}
+            modelYOffset={modelYOffset} 
           />
-
         </div>
       </div>
     </>
