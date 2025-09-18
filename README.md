@@ -134,7 +134,7 @@ graph TD
 | 3   | Farzam Nasir  | CS-22137 |
 | 4   | Hamza Ali     | CS-22146 |
 
-**Supervisor:** Engr. Muhammad Ali Akhtar (Lecturer, Department of Computer and Information Systems Engineering, NEDUET)
+**Supervisor:** Engr. Muhammad Ali Akhtar - Lecturer, Department of Computer and Information Systems Engineering, NEDUET
 
 ---
 
